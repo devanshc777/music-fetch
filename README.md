@@ -15,8 +15,22 @@ no global install.
 
 ## Install (Claude Code)
 
+```bash
+git clone https://github.com/devanshc777/music-fetch.git
+```
+
+Then link the clone into your skills folder.
+
+Windows (PowerShell):
+
 ```powershell
 New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\skills\music-fetch" -Target "<clone-path>"
+```
+
+macOS / Linux:
+
+```bash
+ln -s "<clone-path>" ~/.claude/skills/music-fetch
 ```
 
 Part of a personal music-learning pipeline; the inbox path in `SKILL.md` assumes that setup — adjust to yours.
